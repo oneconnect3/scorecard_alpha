@@ -25,6 +25,62 @@ x9:Number Of Time 60-89Days PastDue Not Worse：60-89天逾期次数
 x10:NumberOfDependents：家属数量,不包括本人在内的家属数量
 
 
+
+### 运行
+
+1. 数据预处理
+
+```bash
+#.
+(scorecard) $ python src/data/make_dataset.py
+```
+
+2. 特征工程
+
+ ```bash
+#.
+(scorecard) $ python src/features/build_features.py
+ ```
+
+3. 建立模型
+
+ ```bash
+#.
+(scorecard) $ python src/model/train_model.py
+ ```
+
+
+
+###  项目目录
+
+```bash
+.
+├── README.md
+├── data
+│   ├── external
+│   │   └── Data\ Dictionary.xls
+│   ├── interim
+│   ├── processed
+│   └── raw
+│       ├── cs-test.csv
+│       └── cs-training.csv
+├── notebooks
+│   ├── build_scorecard_model.ipynb
+│   └── build_scorecard_model_from_scratch.ipynb
+├── requirements.txt
+└── src
+    ├── data
+    │   └── make_dataset.py
+    ├── features
+    │   └── build_features.py
+    ├── model
+    │   └── train_model.py
+    └── visualization
+        └── analyze_dataset.py
+```
+
+
+
 ### 参考
 
 1. https://cloud.tencent.com/developer/article/1448182
