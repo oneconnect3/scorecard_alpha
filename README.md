@@ -2,7 +2,7 @@
 
 
 ### 特征说明
-x0:SeriousDlqin2yrs：好坏客户, 是否发生90天以上逾期
+y:SeriousDlqin2yrs：好坏客户, 是否发生90天以上逾期
 
 x1:RevolvingUtilization Of UnsecuredLines：无担保放款的循环利用：除了不动产和像车贷那样除以信用额度总和的无分期付款债务的信用卡和个人信用额度总额/可用额度比值
 
